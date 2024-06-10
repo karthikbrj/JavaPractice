@@ -13,7 +13,7 @@ public class MissingNumber {
 
         int n= array[array.length-1];
 
-        int sum = n*(n+1)/ 2;
+        int sum = n*(n+1) / 2;
 
         int missingNumber = sum - arraySum;
 
