@@ -128,6 +128,15 @@ public class SinglyLinkedList {
         head=last=null;
         size=0;
     }
+    public int findMiddleElement() {
+		Node first = head;
+		Node second = head;
+		while (second.next != null && second.next.next != null) {
+			first = first.next;
+			second = first.next.next;
+		}
+		return first.val;
+	}
 
 
 }
