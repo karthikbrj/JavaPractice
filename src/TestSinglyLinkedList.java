@@ -9,7 +9,8 @@ public class TestSinglyLinkedList {
         // s.insert(0, 5);
         // s.insert(2, 60);
         // s.remove(1);
-        System.out.println(s.get(0));
+        // System.out.println(s.get(0));
+        s.reverseElements();
 
     }
 }
