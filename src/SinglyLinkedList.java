@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class SinglyLinkedList {
     private Node head;
     private  Node last;
@@ -17,7 +19,6 @@ public class SinglyLinkedList {
             head=n;
             last=n;
         }else{
-            Node temp=head;
             last.next=n;
             last=n;
         }
@@ -137,6 +138,18 @@ public class SinglyLinkedList {
 		}
 		return first.val;
 	}
+
+    public void reverseElements(){
+        Node temp=head;
+        Stack s=new Stack();
+        while(temp!=null){
+            s.push(temp.val);
+            temp=temp.next;
+        }
+        while(!s.isEmpty()){
+            System.out.println(s.pop());
+        }
+    }
 
 
 }
