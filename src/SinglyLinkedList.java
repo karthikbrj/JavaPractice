@@ -138,5 +138,24 @@ public class SinglyLinkedList {
 		return first.val;
 	}
 
+    public boolean isCycle(){
+        if(head==null || size==1){
+            return false;
+        }else{
+            Node first = head;
+            Node second = head;
+            while(first.next!=null && second.next.next !=null && first !=second){
+                first = first.next;
+                second = second.next.next;
+            }
+            if(first==second){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+    }
+
 
 }
