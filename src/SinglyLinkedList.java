@@ -141,7 +141,7 @@ public class SinglyLinkedList {
 
     public void reverseElements(){
         Node temp=head;
-        Stack s=new Stack();
+        Stack<Integer> s=new Stack<Integer>();
         while(temp!=null){
             s.push(temp.val);
             temp=temp.next;
