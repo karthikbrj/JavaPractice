@@ -151,5 +151,22 @@ public class SinglyLinkedList {
         }
     }
 
+    public boolean hasCycle(){
+        if(head==null && size==1){
+            return false;
+        }else{
+            Node first = head;
+            Node second = head;
+            while(first.next !=null && second.next.next!=null && first != second){
+                first=first.next;
+                second=second.next;
+            }
+            if(first==second){
+                return true;
+            }else 
+            return false;
+        }
+    }
+
 
 }
