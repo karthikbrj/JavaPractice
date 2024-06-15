@@ -1,6 +1,6 @@
 public class RemoveDuplicatesInLinkedList {
 
-    // given a sorted linkedlist and remove duplicates
+    // given a sorted LinkedList and remove duplicates
     // LinkedList------> input---- 1->1->2
     //                   output--- 1->2
     // input------>1->1->2->3->3
@@ -17,7 +17,7 @@ public class RemoveDuplicatesInLinkedList {
     //         this.next=next;
     //     }
         public static void main(String []args){
-            int arr[]={1,1,2,3,3};
+            // int arr[]={1,1,2,3,3};
         }
 
         
